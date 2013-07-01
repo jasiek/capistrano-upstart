@@ -49,3 +49,13 @@ post-stop script
 <%= upstart_post_stop_script.chomp %>
 end script
 <% end %>
+
+## setuid
+<% if fetch(:upstart_setuid, nil) %>
+setuid <%= upstart_setuid.chomp %>
+<% end %>
+
+## setgid
+<% if fetch(:upstart_setgid, nil) %>
+setgid <%= upstart_setgid.chomp %>
+<% end %>

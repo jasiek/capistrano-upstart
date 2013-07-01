@@ -43,6 +43,8 @@ Following options are available to manage your service.
  * `:upstart_chdir` - specify the working directory of service. Use `:current_path` by default.
  * `:upstart_console` - the `console` directive of Upstart. `none` by default.
  * `:upstart_respawn` - specify whether service should be respawned or not. `true` by default.
+ * `:upstart_setuid` - specify the user under whom the service is to be ran.
+ * `:upstart_setgid` - specify the group under which the service is to be ran.
 
 ## Contributing
 
